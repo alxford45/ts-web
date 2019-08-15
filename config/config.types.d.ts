@@ -40,5 +40,5 @@ export declare type Configuration = IConfiguration & {
   devServer: DevServer;
   module: Module;
   plugins: Tapable.Plugin[];
-  //output: Output
+  output?: Output;
 };
