@@ -11,7 +11,7 @@ Starts webpack-dev-server at port 8080 serving content from src/\*\*
 # usage
 
     git clone https://github.com/alxford45/ts-web.git
-    cd ts-env
+    cd ts-web
     npm i
     npm run dev
 
