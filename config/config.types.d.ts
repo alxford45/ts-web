@@ -10,30 +10,30 @@ import {
 import { Configuration as IDevConfig } from "webpack-dev-server";
 import { Tapable } from "tapable";
 
-export type Output = IOutput & {
+export declare type Output = IOutput & {
   path: string;
   filename: string;
 };
 
-export type DevServer = IDevConfig & {
+export declare type DevServer = IDevConfig & {
   host: string;
   hot: boolean;
   port: number;
 };
-export type Resolve = IResolve & {
+export declare type Resolve = IResolve & {
   extensions: string[];
 };
-export type Module = IModule & {
+export declare type Module = IModule & {
   rules: RuleSetRule[];
 };
-export type RuleSetRule = IRuleSetRule & {
+export declare type RuleSetRule = IRuleSetRule & {
   test: RuleSetCondition;
   use: RuleSetUse;
   exclude: RuleSetCondition;
   resolve: Resolve;
 };
-export type Mode = "development" | "production" | "none";
-export type Configuration = IConfiguration & {
+export declare type Mode = "development" | "production" | "none";
+export declare type Configuration = IConfiguration & {
   name: string;
   mode: Mode;
   entry: string;
